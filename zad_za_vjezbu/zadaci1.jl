@@ -54,3 +54,18 @@ for i = 1:30
     end
 end
 
+##Zadatak 8 - ne znam zasto ne broji dobro?
+function prebrojiA(recenica)
+    counter=0
+    for i in eachindex(recenica)
+        if recenica[i]=="a" || recenica[i]=="A"
+            counter+=1
+        end
+    end
+    return counter
+end
+
+prebrojiA("Volim studirati u Zagrebu.")
+prebrojiA("aaaaa")
+prebrojiA("nnneeee")
+##
